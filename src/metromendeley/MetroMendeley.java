@@ -5,6 +5,7 @@
 package metromendeley;
 
 import static Clases.CargarTxt.leerArchivo;
+import Estructuras.Lista;
 import java.io.IOException;
 
 /**
@@ -18,7 +19,16 @@ public class MetroMendeley {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Lista lista = new Lista(1, 2, 3, 4, 5, 6);
         
+        
+        
+        
+        lista.pop(5);
+        lista.print();
+        
+        
+        System.out.println(lista.get(3));
         
 
     }
