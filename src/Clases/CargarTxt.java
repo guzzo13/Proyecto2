@@ -22,6 +22,10 @@ public class CargarTxt {
                 contenido.append(linea).append("\n");
             }
         }
+        catch(Exception e) {
+            System.out.println(e);
+                 
+        }
 
         return contenido.toString();
     }

@@ -4,6 +4,7 @@
  */
 package metromendeley;
 
+import Clases.CargarTxt;
 import static Clases.CargarTxt.leerArchivo;
 import Estructuras.Lista;
 import java.io.IOException;
@@ -17,19 +18,12 @@ public class MetroMendeley {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        Lista lista = new Lista(1, 2, 3, 4, 5, 6);
+    public static void main(String[] args) throws IOException {
+      
+        CargarTxt txt = new CargarTxt();
         
-        
-        
-        
-        lista.pop(5);
-        lista.print();
-        
-        
-        System.out.println(lista.get(3));
-        
+        txt.leerArchivo("C:\\Users\\guzzo\\OneDrive\\Escritorio\\prueba.txt");
+        System.out.println(txt.leerArchivo("C:\\Users\\guzzo\\OneDrive\\Escritorio\\prueba.txt"));
 
     }
     
