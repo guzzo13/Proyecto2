@@ -2,20 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Estructuras;
+package EDD;
 
 /**
  *
  * @author guzzo
  */
-public class Nodo<T> {
+public class Node<T> {
     private T data;
-    private Nodo next;
+    private Node next;
 
-    public Nodo(T data) {
+    public Node(T data) {
         this.data = data;
         this.next = null;
     }
+    
 
     public T getData() {
         return data;
@@ -25,11 +26,11 @@ public class Nodo<T> {
         this.data = data;
     }
 
-    public Nodo getNext() {
+    public Node getNext() {
         return next;
     }
 
-    public void setNext(Nodo next) {
+    public void setNext(Node next) {
         this.next = next;
     }
     
